@@ -1,6 +1,6 @@
 const express = require("express")
 const app = express()
-const cors = require("cors")
+const cors = require("cors");
 const PORT = 8000
 const DB_NAME = "ninjas"
 
@@ -15,6 +15,7 @@ require("./config/mongoose.config")(DB_NAME)
 // const AllMyUserRoutes = require("./routes/ninja.route")
 // AllMyUserRoutes.showAll(app)
 // AllMyUserRoutes.create(app)
+//TODO Create the delete, update and findOne controllers and routes
 //! modularize routes
 require("./routes/ninja.route")(app)
 
